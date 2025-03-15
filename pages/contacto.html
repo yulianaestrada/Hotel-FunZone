@@ -14,85 +14,88 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
-
 </head>
 
 <body>
-  <nav class="navbar bg-body-tertiary fixed-top">
-    <div class="container-fluid" id="contenedor">
-      <a class="navbar-brand" href="../index.html" id="ir">🏠 Ir al Inicio</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-        aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-        <div class="offcanvas-header" id="contenedor">
-          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Contáctanos</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body" id="contenedor">
-          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="comida.html"> 🍕 Comida</a>
-            </li>
-          </ul>
-          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="hospedaje.html"> 🛏️ Hospedaje</a>
-            </li>
-          </ul>
-          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="ranking.html"> 🏆 Nuestros Premios</a>
-            </li>
-          </ul>
-          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="contacto.html"> 📩 Enviar Mensaje</a>
-            </li>
-          </ul>
+  <header>
+    <nav class="navbar bg-body-tertiary fixed-top">
+      <div class="container-fluid" id="contenedor">
+        <a class="navbar-brand" href="../index.html" id="ir">🏠 Ir al Inicio</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header" id="contenedor">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Contáctanos</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body" id="contenedor">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="comida.html"> 🍕 Comida</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="hospedaje.html"> 🛏️ Hospedaje</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="ranking.html"> 🏆 Nuestros Premios</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="contacto.html"> 📩 Enviar Mensaje</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
-    </div>
-  </nav>
-  <h1 id="titulo-contacto"><img src="../img/estrellas.png" class="icono"> Hotel FunZone</h1>
-  <div class="contenedor" id="caja-tarjeta">
-    <div class="card mb-3" style="max-width: 1000px;">
-      <div class="row g-12">
-        <div class="col-md-4">
-          <img src="../img/call.jpg" class="img-fluid rounded-start">
-        </div>
-        <div class="col-md-8">
-          <div class="card-body">
-            <h5 class="card-title">Tienes de Peticiones, Quejas o Felicitaciones? <br> ¡Escríbenos!</h5>
-            <form>
-              <div class="contenedor" id="caja2">
-                <div class="mb-3 col-6" id="contenedor">
-                  <label for="exampleInputEmail1" class="form-label">Correo para recibir respuesta</label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                  <div id="emailHelp" class="form-text">No compartiremos tu correo con nadie</div>
+    </nav>
+  </header>
+  <main>
+    <h1 id="titulo-contacto"><img src="../img/estrellas.png" class="icono"> Hotel FunZone</h1>
+    <div class="contenedor" id="caja-tarjeta">
+      <div class="card mb-3" style="max-width: 1000px;">
+        <div class="row g-12">
+          <div class="col-md-4">
+            <img src="../img/call.jpg" class="img-fluid rounded-start">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Tienes de Peticiones, Quejas o Felicitaciones? <br> ¡Escríbenos!</h5>
+              <form>
+                <div class="contenedor" id="caja2">
+                  <div class="mb-3 col-6" id="contenedor">
+                    <label for="exampleInputEmail1" class="form-label">Correo para recibir respuesta</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text">No compartiremos tu correo con nadie</div>
+                  </div>
+                  <div class="mb-3 col-6" id="contenedor">
+                    <label for="exampleInputPassword1" class="form-label">Nombre Usuario</label>
+                    <input type="text" class="form-control" id="exampleInputName">
+                  </div>
+                  <div class="mb-3 col-6" id="contenedor">
+                    <label for="exampleInputPassword1" class="form-label">Mensaje</label>
+                    <input type="text" class="form-control" id="exampleInputMessage">
+                  </div>
+                  <button type="submit" class="btn btn-primary">Enviar</button>
                 </div>
-                <div class="mb-3 col-6" id="contenedor">
-                  <label for="exampleInputPassword1" class="form-label">Nombre Usuario</label>
-                  <input type="text" class="form-control" id="exampleInputName">
-                </div>
-                <div class="mb-3 col-6" id="contenedor">
-                  <label for="exampleInputPassword1" class="form-label">Mensaje</label>
-                  <input type="text" class="form-control" id="exampleInputMessage">
-                </div>
-                <button type="submit" class="btn btn-primary">Enviar</button>
-              </div>
-            </form>
-            <p class="card-text"><small class="text-body-secondary">Tiempo de respuesta 3 días hábiles</small></p>
+              </form>
+              <p class="card-text"><small class="text-body-secondary">Tiempo de respuesta 3 días hábiles</small></p>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</body>
+  </main>
+  <footer>
+    <p>Desarrollado por Yuliana Estrada Calle</p>
+  </footer>
 
-<footer>
-  <p>Desarrollado por Yuliana Estrada Calle</p>
-</footer>
+</body>
 
 </html>

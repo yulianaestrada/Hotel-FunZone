@@ -11,63 +11,67 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Luckiest+Guy&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
-
 </head>
 
 <body>
-    <nav class="navbar bg-body-tertiary fixed-top">
-        <div class="container-fluid" id="contenedor">
-            <a class="navbar-brand" href="../index.html">🏠 Inicio</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
-                aria-labelledby="offcanvasNavbarLabel">
-                <div class="offcanvas-header" id="contenedor">
-                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Contáctanos</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body" id="contenedor">
-                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="pages/contacto.html">📩 Enviar
-                                Mensaje</a>
-                        </li>
-                    </ul>
-                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="pages/ranking.html"> 🏆 Nuestros
-                                Premios</a>
-                        </li>
-                    </ul>
+    <header>
+        <nav class="navbar bg-body-tertiary fixed-top">
+            <div class="container-fluid" id="contenedor">
+                <a class="navbar-brand" href="index.html">🏠 Inicio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header" id="contenedor">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Contáctanos</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body" id="contenedor">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="pages/contacto.html">📩 Enviar
+                                    Mensaje</a>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="pages/ranking.html"> 🏆 Nuestros
+                                    Premios</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
+        </nav>
+    </header>
+    <main>
+        <h1><img src="img/estrellas.png" class="icono"> Hotel FunZone</h1>
+        <div class="nosotros" id="index-caja">
+            <h2 id="menu">Menú</h2>
+            <img src="img/restaurante.png" width="800" height="200">
+            <a href="pages/comida.html"><button id="button1">Detalles</button></a>
         </div>
-    </nav>
-    <h1><img src="img/estrellas.png" class="icono"> Hotel FunZone</h1>
-    <div class="nosotros" id="index-caja">
-        <h2 id="menu">Menú</h2>
-        <img src="img/restaurante.png" width="800" height="200">
-        <a href="pages/comida.html"><button id="button1">Detalles</button></a>
-    </div>
-    <div class="eventos" id="index-caja">
-        <h2 id="eventos">Hospedaje</h2>
-        <img src="img/fiesta.png" width="200" height="200">
-        <a href="pages/hospedaje.html"><button id="button2">Detalles</button></a>
-    </div>
-    <div class="historia" id="index-caja">
-        <h2 id="juegos">Juegos</h2>
-        <img src="img/juegos.png" width="200" height="200">
-        <a href="pages/juegos.html"><button id="button3">Detalles</button></a>
-    </div>
-</body>
+        <div class="eventos" id="index-caja">
+            <h2 id="eventos">Hospedaje</h2>
+            <img src="img/fiesta.png" width="200" height="200">
+            <a href="pages/hospedaje.html"><button id="button2">Detalles</button></a>
+        </div>
+        <div class="historia" id="index-caja">
+            <h2 id="juegos">Juegos</h2>
+            <img src="img/juegos.png" width="200" height="200">
+            <a href="pages/juegos.html"><button id="button3">Detalles</button></a>
+        </div>
+    </main>
+    <footer>
+        <p>Desarrollado por Yuliana Estrada Calle</p>
+    </footer>
 
-<footer>
-    <p>Desarrollado por Yuliana Estrada Calle</p>
-</footer>
+</body>
 
 </html>

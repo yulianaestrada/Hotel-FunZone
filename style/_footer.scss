@@ -1,0 +1,26 @@
+$primary-color: purple;
+$secondary-color: #c39bd3;
+$third-color: #58d68d;
+$display-flex: flex;
+$align: center;
+$font-family-primary: 'Bungee', cursive;
+$font-family-secondary: "Questrial", serif;
+
+footer {
+    text-align: $align;
+    display: $display-flex;
+    justify-content: $align;
+    bottom: 0;
+    width: 100%;
+    height: 32px;
+    padding-bottom: 16px;
+    background: linear-gradient(to right, $primary-color, $third-color);
+    border-top: 2px solid $primary-color;
+    z-index: 2000;
+    position: fixed;
+}
+
+footer p {
+    color: white;
+    font-family: $font-family-secondary;
+}

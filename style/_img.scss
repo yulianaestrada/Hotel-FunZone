@@ -1,0 +1,112 @@
+$primary-color: purple;
+$secondary-color: #c39bd3;
+$third-color: #58d68d;
+$display-flex: flex;
+$align: center;
+$font-family-primary: 'Bungee', cursive;
+$font-family-secondary: "Questrial", serif;
+
+@mixin imagen-estilo($translate) {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 55%;
+    left: 15%;
+    transform: translate($translate, -50%);
+}
+
+.nosotros img {
+    @include imagen-estilo(-50%);
+}
+
+.eventos img {
+    @include imagen-estilo(120%);
+}
+
+.historia img {
+    @include imagen-estilo(290%);
+}
+
+.img {
+    width: 300px;
+    height: 100px;
+    margin-top: 200px;
+    align-content: $align;
+}
+
+.img2 {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 35%;
+    left: 25%;
+}
+
+.img3 {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 45%;
+    left: 15%;
+}
+
+#oro,
+#plata,
+#bronce {
+    @extend .img;
+}
+
+#ramen {
+    @extend .img2;
+    transform: translate(-40%, -130%);
+}
+
+#boba {
+    @extend .img2;
+    transform: translate(290%, -130%);
+}
+
+#rosquilla {
+    @extend .img2;
+    transform: translate(620%, -130%);
+}
+
+#juego {
+    @extend .img3;
+    transform: translate(-40%, -130%);
+}
+
+#piscina {
+    @extend .img3;
+    transform: translate(290%, -130%);
+}
+
+#redes {
+    @extend .img3;
+    transform: translate(700%, -130%);
+}
+
+#Gimnasio {
+    @extend .img3;
+    transform: translate(620%, -130%);
+    animation: move 5s infinite;
+}
+
+#ducha {
+    @extend .img3;
+    transform: translate(620%, -130%);
+}
+
+@keyframes move {
+    0% {
+        transform: translateX(0) translateY(0) translateZ(0);
+    }
+}
+
+.logo {
+    position: absolute;
+    top: -10px;
+    left: 400px;
+    width: 80px;
+    height: auto;
+}

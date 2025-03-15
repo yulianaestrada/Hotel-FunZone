@@ -1,0 +1,87 @@
+$primary-color: purple;
+$secondary-color: #c39bd3;
+$third-color: #58d68d;
+$display-flex: flex;
+$align: center;
+$font-family-primary: 'Bungee', cursive;
+$font-family-secondary: "Questrial", serif;
+
+@mixin box-styles($margin-top) {
+    border: 5px solid gray;
+    margin: 20px;
+    padding: 190px;
+    width: 30%;
+    display: inline-block;
+    height: 500px;
+    border-radius: 10pc;
+    overflow: hidden;
+    margin-top: $margin-top;
+}
+
+#cajas {
+    @include box-styles(120px);
+}
+
+#cajas2 {
+    @include box-styles(180px);
+}
+
+.nosotros ul,
+.eventos ul,
+.historia ul {
+    font-family: $font-family-secondary;
+    color: #333;
+    display: block;
+    margin-block-start: -5em;
+    margin-inline-start: -150px;
+    padding-inline-start: 50px;
+    unicode-bidi: isolate;
+}
+
+.encabezado {
+    position: relative;
+    text-align: center;
+}
+
+#caja {
+    margin: 20px;
+    padding: 10px;
+    width: 100%;
+    display: inline-block;
+    height: 500px;
+    overflow: hidden;
+    margin-top: 120px;
+}
+
+#caja-tarjeta {
+    align-content: center;
+    transform: translate(15%, -9%);
+}
+
+.row.g-12 {
+    align-items: stretch;
+}
+
+.col-md-4 img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.contenedor-h1-comida h1 {
+    color: $primary-color;
+    font-size: 58px;
+    font-family: $font-family-primary;
+    text-align: $align;
+    margin: 110px;
+}
+
+.nosotros h2,
+.eventos h2,
+.historia h2 {
+    font-size: 28px;
+    font-family: $secondary-color;
+    text-align: $align;
+    position: absolute;
+    top: 15%;
+    transform: translate(-50%, -80%);
+}
