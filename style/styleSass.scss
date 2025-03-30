@@ -1,6 +1,7 @@
 @use 'footer';
 @use 'img';
 @use 'comida';
+@use 'ranking';
 
 $primary-color: purple;
 $secondary-color: #c39bd3;
@@ -237,7 +238,6 @@ h1 {
         margin: 15px auto;
         transform: none;
     }
-
     #cajas {
         width: 90%;
         padding: 20px;
@@ -259,9 +259,12 @@ h1 {
     }
 
     footer {
-        position: static;
-        height: auto;
-        padding: 15px 0;
+        height: 40px !important;
+        padding-bottom: 20px !important;
+    }
+
+    footer p {
+        font-size: 0.9rem !important;
     }
 
     #ramen,
@@ -299,6 +302,7 @@ h1 {
 
     #index-caja,
     #cajas,
+    #caja3,
     #oro,
     #plata,
     #bronce {
@@ -318,11 +322,15 @@ h1 {
     }
 
     footer {
-        flex-direction: column;
-        width: 480px;
-        padding: 20px;
-        text-align: center;
-        border-radius: 30px;
+        height: 48px !important;
+        padding-bottom: 24px !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+    }
+
+    footer p {
+        font-size: 0.8rem !important;
+        margin: 4px 0 !important;
     }
 
     #index-caja img {
@@ -379,6 +387,7 @@ h1 {
     }
 
     #cajas,
+    #caja3,
     #cajas2 {
         width: 100%;
         padding: 15px;

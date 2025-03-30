@@ -7,20 +7,21 @@ $font-family-primary: 'Bungee', cursive;
 $font-family-secondary: "Questrial", serif;
 
 footer {
-    text-align: $align;
-    display: $display-flex;
-    justify-content: $align;
-    bottom: 0;
-    width: 100%;
-    height: 32px;
-    padding-bottom: 16px;
-    background: linear-gradient(to right, $primary-color, $third-color);
-    border-top: 2px solid $primary-color;
-    z-index: 2000;
-    position: fixed;
+    text-align: center !important;
+    display: flex !important;
+    justify-content: center !important;
+    bottom: 0 !important;
+    width: 100% !important;
+    height: 32px !important;
+    padding-bottom: 16px !important;
+    background: linear-gradient(to right, $primary-color, $third-color) !important;
+    border-top: 2px solid $primary-color !important;
+    z-index: 2000 !important;
+    position: fixed !important;
 }
 
 footer p {
-    color: white;
-    font-family: $font-family-secondary;
+    color: white !important;
+    font-family: "Questrial", serif !important;
+    margin: 8px 0 !important;
 }
