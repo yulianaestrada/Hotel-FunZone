@@ -238,6 +238,7 @@ h1 {
         margin: 15px auto;
         transform: none;
     }
+
     #cajas {
         width: 90%;
         padding: 20px;
@@ -322,8 +323,8 @@ h1 {
     }
 
     footer {
-        height: 48px !important;
-        padding-bottom: 24px !important;
+        height: 34px !important;
+        padding-bottom: 4px !important;
         flex-direction: column !important;
         justify-content: center !important;
     }
@@ -358,6 +359,12 @@ h1 {
     .historia img {
         width: 100%;
         max-width: 200px;
+    }
+
+    #cajas h2 {
+        position: static;
+        margin: 20px;
+        transform: none;
     }
 
     .nosotros h2 {
