@@ -1,0 +1,230 @@
+/* Media queries para móviles */
+/* Media queries para tablets */
+@media (max-width: 768px) {
+
+    h1,
+    #titulo-contacto {
+        font-size: 42px;
+        margin: 25px 0;
+    }
+
+    .nosotros,
+    .eventos,
+    .historia {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin: 10px 0;
+        position: static;
+    }
+
+    #index-caja,
+    #caja-tarjeta {
+        width: 100%;
+        max-width: 100%;
+        padding: 20px;
+        text-align: center;
+        margin: 20px 0;
+        height: auto;
+    }
+
+    .nosotros img,
+    .eventos img,
+    .historia img {
+        position: static;
+        width: 80%;
+        max-width: 300px;
+        height: auto;
+        margin: 15px auto;
+        transform: none;
+    }
+
+    .nosotros h2,
+    .eventos h2,
+    .historia h2 {
+        position: static;
+        margin: 15px 0;
+        transform: none;
+    }
+
+    #button1,
+    #button2,
+    #button3,
+    #button4 {
+        position: static;
+        display: block;
+        margin: 15px auto;
+        transform: none;
+    }
+
+    #cajas {
+        width: 90%;
+        padding: 20px;
+        height: auto;
+        margin: 15px auto;
+    }
+
+    .nosotros ul,
+    .eventos ul,
+    .historia ul {
+        margin: 0;
+        padding-left: 20px;
+    }
+
+    .logo {
+        position: static;
+        display: block;
+        margin: 10px auto;
+    }
+
+    footer {
+        height: 40px !important;
+        padding-bottom: 20px !important;
+    }
+
+    footer p {
+        font-size: 0.9rem !important;
+    }
+
+    #ramen,
+    #boba,
+    #rosquilla {
+        position: static;
+        display: block;
+        width: 120px;
+        height: 120px;
+        margin: 15px auto;
+        transform: none;
+    }
+
+    #button3:hover,
+    #button2:hover,
+    #button1:hover {
+        position: static;
+        display: block;
+        margin: 15px auto;
+        transform: none;
+        background-color: #7d3c98;
+        font-family: "Questrial", serif;
+        color: white;
+    }
+}
+
+@media (max-width: 500px) {
+
+    h1,
+    #titulo-contacto {
+        font-size: 32px;
+        margin: 20px 0;
+    }
+
+    #index-caja,
+    #cajas,
+    #caja3,
+    #oro,
+    #plata,
+    #bronce {
+        flex-direction: column;
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+        border-radius: 30px;
+        margin-top: 20px;
+    }
+
+    #caja-tarjeta {
+        flex-direction: column;
+        max-width: 100%;
+        padding: 20px;
+        text-align: center;
+        border-radius: 30px;
+    }
+
+    footer {
+        height: 34px !important;
+        padding-bottom: 4px !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+    }
+
+    footer p {
+        font-size: 0.8rem !important;
+        margin: 4px 0 !important;
+    }
+
+    #index-caja img {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    #cajas2 img {
+        width: 100%;
+        max-width: 150px;
+        padding: 0px;
+        display: block;
+        margin-bottom: 0;
+    }
+
+    #cajas2 #rosquilla,
+    #cajas2 #boba,
+    #cajas2 #ramen {
+        display: block;
+        margin-top: 0;
+    }
+
+    .nosotros img,
+    .eventos img,
+    .historia img {
+        width: 100%;
+        max-width: 200px;
+    }
+
+    #cajas h2 {
+        position: static;
+        margin: 20px;
+        transform: none;
+    }
+
+    .nosotros h2 {
+        position: static;
+        margin: 70px 150px;
+        transform: none;
+    }
+
+    .eventos h2 {
+        position: static;
+        margin: 500px 150px;
+        transform: none;
+    }
+
+    .historia h2 {
+        position: static;
+        margin: 950px 150px;
+        transform: none;
+    }
+
+    #button1,
+    #button2,
+    #button3,
+    #button4 {
+        width: 90%;
+        max-width: 240px;
+    }
+
+    #cajas,
+    #caja3,
+    #cajas2 {
+        width: 100%;
+        padding: 15px;
+        border-radius: 30px;
+        margin: 60px 0;
+    }
+
+    #ramen,
+    #boba,
+    #rosquilla {
+        width: 100px;
+        height: 100px;
+    }
+}

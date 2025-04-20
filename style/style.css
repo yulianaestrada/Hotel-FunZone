@@ -1,274 +1,4 @@
 @charset "UTF-8";
-footer {
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  bottom: 0;
-  width: 100%;
-  height: 32px;
-  padding-bottom: 16px;
-  background: linear-gradient(to right, purple, #58d68d);
-  border-top: 2px solid purple;
-  z-index: 2000;
-  position: fixed;
-}
-
-footer p {
-  color: white;
-  font-family: "Questrial", serif;
-  margin: 8px 0;
-}
-
-.nosotros img {
-  width: 300px;
-  height: 300px;
-  position: absolute;
-  top: 55%;
-  left: 15%;
-  transform: translate(-50%, -50%);
-}
-
-.eventos img {
-  width: 300px;
-  height: 300px;
-  position: absolute;
-  top: 55%;
-  left: 15%;
-  transform: translate(120%, -50%);
-}
-
-.historia img {
-  width: 300px;
-  height: 300px;
-  position: absolute;
-  top: 55%;
-  left: 15%;
-  transform: translate(290%, -50%);
-}
-
-.img, #oro,
-#plata,
-#bronce {
-  width: 300px;
-  height: 100px;
-  margin-top: 200px;
-  align-content: center;
-}
-
-.img2, #rosquilla, #boba, #ramen {
-  width: 150px;
-  height: 150px;
-  position: absolute;
-  top: 35%;
-  left: 25%;
-}
-
-.img3, #ducha, #Gimnasio, #redes, #piscina, #juego {
-  width: 150px;
-  height: 150px;
-  position: absolute;
-  top: 45%;
-  left: 15%;
-}
-
-#ramen {
-  transform: translate(-40%, -130%);
-}
-
-#boba {
-  transform: translate(290%, -130%);
-}
-
-#rosquilla {
-  transform: translate(620%, -130%);
-}
-
-#juego {
-  transform: translate(-40%, -130%);
-}
-
-#piscina {
-  transform: translate(290%, -130%);
-}
-
-#redes {
-  transform: translate(700%, -130%);
-}
-
-#Gimnasio {
-  transform: translate(620%, -130%);
-  animation: move 5s infinite;
-}
-
-#ducha {
-  transform: translate(620%, -130%);
-}
-
-@keyframes move {
-  0% {
-    transform: translateX(0) translateY(0) translateZ(0);
-  }
-}
-.logo {
-  position: absolute;
-  top: -10px;
-  left: 400px;
-  width: 80px;
-  height: auto;
-}
-
-#cajas {
-  border: 5px solid gray;
-  margin: 20px;
-  padding: 190px;
-  width: 30%;
-  display: inline-block;
-  height: 500px;
-  border-radius: 10pc;
-  overflow: hidden;
-  margin-top: 120px;
-}
-
-#cajas2 {
-  border: 5px solid gray;
-  margin: 20px;
-  padding: 190px;
-  width: 30%;
-  display: inline-block;
-  height: 500px;
-  border-radius: 10pc;
-  overflow: hidden;
-  margin-top: 180px;
-}
-
-.nosotros ul,
-.eventos ul,
-.historia ul {
-  font-family: "Questrial", serif;
-  color: #333;
-  display: block;
-  margin-block-start: -5em;
-  margin-inline-start: -150px;
-  padding-inline-start: 50px;
-  unicode-bidi: isolate;
-}
-
-.encabezado {
-  position: relative;
-  text-align: center;
-}
-
-#caja {
-  margin: 20px;
-  padding: 10px;
-  width: 100%;
-  display: inline-block;
-  height: 500px;
-  overflow: hidden;
-  margin-top: 120px;
-}
-
-#caja-tarjeta {
-  align-content: center;
-  transform: translate(15%, -9%);
-}
-
-.row.g-12 {
-  align-items: stretch;
-}
-
-.col-md-4 img {
-  height: 100%;
-  object-fit: cover;
-}
-
-.contenedor-h1-comida h1 {
-  color: purple;
-  font-size: 58px;
-  font-family: "Bungee", cursive;
-  text-align: center;
-  margin: 110px;
-}
-
-.nosotros h2,
-.eventos h2,
-.historia h2 {
-  font-size: 28px;
-  font-family: #c39bd3;
-  text-align: center;
-  position: absolute;
-  top: 15%;
-  transform: translate(-50%, -80%);
-}
-
-.caja {
-  width: 30%;
-  min-height: 50vh;
-  background-color: #c39bd3;
-  border: 2px solid purple;
-  margin: 10px;
-  flex-grow: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px;
-  box-sizing: border-box;
-}
-
-.caja img {
-  width: 300px !important;
-  height: 100px !important;
-  margin-top: 20px !important;
-  object-fit: contain !important;
-}
-
-.caja p {
-  text-align: center;
-  margin: 15px 0;
-  color: black;
-}
-
-/* Media queries para tablets */
-@media (max-width: 992px) {
-  .conten {
-    justify-content: center;
-  }
-  .caja {
-    width: 45%;
-  }
-}
-@media (max-width: 768px) {
-  #titulo-ranking {
-    font-size: 38px;
-    margin: 70px 25px 25px;
-  }
-  #ranking {
-    font-size: 24px;
-    margin-top: -30px !important;
-  }
-  .bombas {
-    width: 50px;
-    margin: 0 10px !important;
-  }
-  .conten {
-    flex-direction: column;
-    padding: 10px;
-  }
-  .caja {
-    width: 90%;
-    margin: 15px auto;
-    min-height: auto;
-    padding: 20px;
-  }
-  .caja img {
-    width: 200px;
-    height: 80px;
-  }
-  .caja p {
-    font-size: 0.95rem;
-    margin: 20px 0;
-  }
-}
 .caja {
   width: 10%;
   height: 50vh;
@@ -449,6 +179,277 @@ h1 {
   color: white;
 }
 
+#cajas {
+  border: 5px solid gray;
+  margin: 20px;
+  padding: 190px;
+  width: 30%;
+  display: inline-block;
+  height: 500px;
+  border-radius: 10pc;
+  overflow: hidden;
+  margin-top: 120px;
+}
+
+#cajas2 {
+  border: 5px solid gray;
+  margin: 20px;
+  padding: 190px;
+  width: 30%;
+  display: inline-block;
+  height: 500px;
+  border-radius: 10pc;
+  overflow: hidden;
+  margin-top: 180px;
+}
+
+.nosotros ul,
+.eventos ul,
+.historia ul {
+  font-family: "Questrial", serif;
+  color: #333;
+  display: block;
+  margin-block-start: -5em;
+  margin-inline-start: -150px;
+  padding-inline-start: 50px;
+  unicode-bidi: isolate;
+}
+
+.encabezado {
+  position: relative;
+  text-align: center;
+}
+
+#caja {
+  margin: 20px;
+  padding: 10px;
+  width: 100%;
+  display: inline-block;
+  height: 500px;
+  overflow: hidden;
+  margin-top: 120px;
+}
+
+#caja-tarjeta {
+  align-content: center;
+  transform: translate(15%, -9%);
+}
+
+.row.g-12 {
+  align-items: stretch;
+}
+
+.col-md-4 img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.contenedor-h1-comida h1 {
+  color: purple;
+  font-size: 58px;
+  font-family: "Bungee", cursive;
+  text-align: center;
+  margin: 110px;
+}
+
+.nosotros h2,
+.eventos h2,
+.historia h2 {
+  font-size: 28px;
+  font-family: #c39bd3;
+  text-align: center;
+  position: absolute;
+  top: 15%;
+  transform: translate(-50%, -80%);
+}
+
+.caja {
+  width: 30%;
+  min-height: 50vh;
+  background-color: #c39bd3;
+  border: 2px solid purple;
+  margin: 10px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.caja img {
+  width: 300px !important;
+  height: 100px !important;
+  margin-top: 20px !important;
+  object-fit: contain !important;
+}
+
+.caja p {
+  text-align: center;
+  margin: 15px 0;
+  color: black;
+}
+
+/* Media queries para tablets */
+@media (max-width: 992px) {
+  .conten {
+    justify-content: center;
+  }
+  .caja {
+    width: 45%;
+  }
+}
+@media (max-width: 768px) {
+  #titulo-ranking {
+    font-size: 38px;
+    margin: 70px 25px 25px;
+  }
+  #ranking {
+    font-size: 24px;
+    margin-top: -30px !important;
+  }
+  .bombas {
+    width: 50px;
+    margin: 0 10px !important;
+  }
+  .conten {
+    flex-direction: column;
+    padding: 10px;
+  }
+  .caja {
+    width: 90%;
+    margin: 15px auto;
+    min-height: auto;
+    padding: 20px;
+  }
+  .caja img {
+    width: 200px;
+    height: 80px;
+  }
+  .caja p {
+    font-size: 0.95rem;
+    margin: 20px 0;
+  }
+}
+.nosotros img {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  top: 55%;
+  left: 15%;
+  transform: translate(-50%, -50%);
+}
+
+.eventos img {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  top: 55%;
+  left: 15%;
+  transform: translate(120%, -50%);
+}
+
+.historia img {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  top: 55%;
+  left: 15%;
+  transform: translate(290%, -50%);
+}
+
+.img, #oro,
+#plata,
+#bronce {
+  width: 300px;
+  height: 100px;
+  margin-top: 200px;
+  align-content: center;
+}
+
+.img2, #rosquilla, #boba, #ramen {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: 35%;
+  left: 25%;
+}
+
+.img3, #ducha, #Gimnasio, #redes, #piscina, #juego {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: 45%;
+  left: 15%;
+}
+
+#ramen {
+  transform: translate(-40%, -130%);
+}
+
+#boba {
+  transform: translate(290%, -130%);
+}
+
+#rosquilla {
+  transform: translate(620%, -130%);
+}
+
+#juego {
+  transform: translate(-40%, -130%);
+}
+
+#piscina {
+  transform: translate(290%, -130%);
+}
+
+#redes {
+  transform: translate(700%, -130%);
+}
+
+#Gimnasio {
+  transform: translate(620%, -130%);
+  animation: move 5s infinite;
+}
+
+#ducha {
+  transform: translate(620%, -130%);
+}
+
+@keyframes move {
+  0% {
+    transform: translateX(0) translateY(0) translateZ(0);
+  }
+}
+.logo {
+  position: absolute;
+  top: -10px;
+  left: 400px;
+  width: 80px;
+  height: auto;
+}
+
+footer {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  bottom: 0;
+  width: 100%;
+  height: 32px;
+  padding-bottom: 16px;
+  background: linear-gradient(to right, purple, #58d68d);
+  border-top: 2px solid purple;
+  z-index: 2000;
+  position: fixed;
+}
+
+footer p {
+  color: white;
+  font-family: "Questrial", serif;
+  margin: 8px 0;
+}
+
+/* Media queries para móviles */
 /* Media queries para tablets */
 @media (max-width: 768px) {
   h1,
@@ -547,7 +548,6 @@ h1 {
     color: white;
   }
 }
-/* Media queries para móviles */
 @media (max-width: 500px) {
   h1,
   #titulo-contacto {
@@ -565,10 +565,11 @@ h1 {
     padding: 20px;
     text-align: center;
     border-radius: 30px;
+    margin-top: 20px;
   }
   #caja-tarjeta {
     flex-direction: column;
-    width: 480px;
+    max-width: 100%;
     padding: 20px;
     text-align: center;
     border-radius: 30px;
@@ -639,6 +640,7 @@ h1 {
     width: 100%;
     padding: 15px;
     border-radius: 30px;
+    margin: 60px 0;
   }
   #ramen,
   #boba,
